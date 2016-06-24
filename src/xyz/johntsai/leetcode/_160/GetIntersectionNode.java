@@ -67,7 +67,7 @@ public class GetIntersectionNode {
         }
         return length;
     }
-    
+
     public static void main(String[] args) {
 
     }
