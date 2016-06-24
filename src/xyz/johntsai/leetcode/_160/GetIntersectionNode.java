@@ -1,16 +1,14 @@
 package xyz.johntsai.leetcode._160;
 
-import java.util.ArrayList;
+
 import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.List;
 
 /**
  * Created by JohnTsai on 16/6/23.
  */
 public class GetIntersectionNode {
     //Move the longer List (Max-Min) Nodes;
-    public ListNode getIntersectionNode(ListNode headA,ListNode headB){
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB){
         ListNode result = null;
         if(headA!=null&&headB!=null){
             int lengthA= getLength(headA);
