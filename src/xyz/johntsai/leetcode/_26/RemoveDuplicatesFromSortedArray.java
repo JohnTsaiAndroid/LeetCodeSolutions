@@ -32,4 +32,19 @@ public class RemoveDuplicatesFromSortedArray {
         }
         return result;
     }
+
+    public int removeButterSolutions(int[]nums){
+        int length = nums.length;
+        if(length==0)
+            return 0;
+        int end = 0;
+        for(int i = 1;i<length;i++){
+            if(nums[i]!=nums[end]){
+                end++;
+                if(i!=end)
+                    nums[end] = nums[i];
+            }
+        }
+        return end+1;
+    }
 }
