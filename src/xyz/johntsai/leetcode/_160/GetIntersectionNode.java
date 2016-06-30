@@ -1,6 +1,8 @@
 package xyz.johntsai.leetcode._160;
 
 
+import xyz.johntsai.leetcode.ListNode;
+
 import java.util.HashSet;
 
 /**

@@ -1,5 +1,7 @@
 package xyz.johntsai.leetcode._19;
 
+import xyz.johntsai.leetcode.ListNode;
+
 /**
  * Created by JohnTsai on 16/6/30.
  */

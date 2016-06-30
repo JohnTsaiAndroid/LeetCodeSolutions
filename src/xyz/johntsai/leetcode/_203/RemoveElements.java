@@ -1,5 +1,7 @@
 package xyz.johntsai.leetcode._203;
 
+import xyz.johntsai.leetcode.ListNode;
+
 /**
  * Created by JohnTsai on 16/6/24.
  */
@@ -14,7 +16,7 @@ public class RemoveElements {
      * @param val
      * @return
      */
-    public ListNode removeElements(ListNode head,int val) {
+    public ListNode removeElements(ListNode head, int val) {
         if(head==null) return head;
         //哑节点
         ListNode dummy = new ListNode(0);
