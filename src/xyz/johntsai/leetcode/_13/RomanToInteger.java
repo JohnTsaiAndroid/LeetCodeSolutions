@@ -48,6 +48,19 @@ public class RomanToInteger {
        }
        return result;
     }
+
+    public int romanToIntBetterSolution(String s){
+        int length = s.length();
+        int result = romanCharToInt(s.charAt(length-1));
+        for(int i=length-2;i>=0;i--){
+           if(romanCharToInt(s.charAt(i))>romanCharToInt(s.charAt(i+1)))
+               result+=romanCharToInt(s.charAt(i));
+            else
+               result-=romanCharToInt(s.charAt(i));
+        }
+        return result;
+    }
+
     public int romanCharToInt(char c){
        if(c=='I'){
            return 1;
@@ -70,7 +83,7 @@ public class RomanToInteger {
 
     public static void main(String[] args) {
         RomanToInteger romanToInteger = new RomanToInteger();
-        final int dcxxi = romanToInteger.romanToInt("MCMXCVI");
+        final int dcxxi = romanToInteger.romanToIntBetterSolution("MCMXCVI");
         System.out.println(dcxxi);
     }
 }
